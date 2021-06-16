@@ -1,0 +1,154 @@
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    a{
+        color: #9e9fa4;
+        text-decoration: none;
+        &:hover{
+            color: #212121;
+        }
+    }
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+h1{
+    font-size: 40px;
+    @media screen and (max-width: 699px) {
+        font-size: 35px;
+        margin-top: 0;
+    }
+}
+
+h3{
+    font-size: 30px;
+    @media screen and (max-width: 899px) {
+        font-size: 25;
+        margin-top: 0;
+    }
+}
+
+p{
+    font-size: 16px;
+    @media screen and (max-width: 899px) {
+        font-size: 14px;
+    }
+}
+
+button{
+    font-size: 16px;
+    &.primary{
+        background: #09A858;
+        color: #ffffff;
+        padding: 10px 38px;
+    }
+    &.generate-password{
+        padding: 0 25px;
+    }
+}
+
+header{
+    position: relative;
+    display: block;
+    height: 70px;
+    background-color: #111111;
+}
+
+.header-body, content{
+    display: grid;
+    max-width: 1160px;
+    margin: auto;
+    padding: 15px;
+}
+
+content{
+    padding-top: 23px;
+    .note{
+        color: #9E9FA4;
+        font-size: 12px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .content-header{
+        background-color: #111111;
+        color: #ffffff;
+        margin-top: 24px;
+        padding: 40px 15px;
+        @media screen and (max-width: 899px) {
+            padding: 30px 15px;
+        }
+        .generate-password-wrp{
+            text-align: center;
+            margin: auto;
+            .input-wrp{
+                display: flex;
+                justify-content: center;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+            #generated-password{
+                padding: 14px 0 14px 24px;
+                border: 1px solid white;
+                width: 45%;
+                font-size: 20px;
+                font-weight: 700;
+                &:focus, &:active{
+                    outline: none;
+                }
+            }
+            .generate-password{
+                background-color: #ffffff;
+            }
+            .options{
+                display: flex;
+                max-width: 463px;
+                margin: auto;
+                font-size: 12px;
+                justify-content: space-between;
+            }
+        }
+    }
+    .content-body{
+        margin: auto;
+        .post{
+            display: flex;
+            padding: 0 100px;
+            justify-content: space-between;
+            @media screen and (max-width: 899px) {
+                flex-direction: column;
+                padding: 0 15px;
+            }
+            img{
+                width: 100%;
+                @media screen and (max-width: 899px) {
+                    order: -1;
+                    margin: 0 auto;
+                }
+            }
+            .img-left{
+                max-width: 225px;
+            }
+            .img-right{
+                max-width: 224px;
+
+            }
+            .post-text{
+                width: 60%;
+                @media screen and (max-width: 899px) {
+                    width: 100%;
+                }
+            }
+            p{
+                color: #7A7A7A;
+            }
+        }
+    }
+}
